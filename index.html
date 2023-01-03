@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Russo+One&family=Staatliches&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="index.css" />
+		<title>Cards of War</title>
+	</head>
+	<body class="container">
+		<div id="openModal">
+			<i class="fa-solid fa-circle-info fa-lg"></i>
+		</div>
+		<div class="top-area">
+			<button id="new-deck" class="breathe">Start A New Deck</button>
+			<p id="cards-remaining"></p>
+		</div>
+		<h1 id="game-message">Cards of War ⚔️</h1>
+		<p id="housePoints" class="score-title">House Score: 0</p>
+		<div id="card-container" class="main-card">
+			<div class="card-outline">
+				<p class="outline-text shimmer">House Cards</p>
+			</div>
+			<div class="card-outline">
+				<p class="outline-text shimmer">Player Cards</p>
+			</div>
+		</div>
+		<p id="playerPoints" class="score-title">Player Score: 0</p>
+		<button id="draw-card">Draw Card</button>
+		<div class="modal">
+			<div class="modal-content">
+				<p id="modalTitle">How To Play</p>
+				<button id="modal-exit">X</button>
+				<h3>
+					The goal of the game, "Cards of War" is to defeat the House in a
+					classic showdown of random luck.
+				</h3>
+				<h3>
+					To start, click on the "Start A New Deck" button. This will generate a
+					new deck behind the scenes and activate the "Draw Card" button at the
+					bottom.
+				</h3>
+				<h3>
+					The game ends when the cards remaining reach zero and either you or
+					the House gets a winning message. If you want to try again, simply
+					generate a new deck and draw another card.
+				</h3>
+				<h3>
+					When you're ready, start a new deck and click on the "Draw Card"
+					button to test your luck! 🍀
+				</h3>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
