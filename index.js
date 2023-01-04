@@ -21,7 +21,6 @@ const handleNewDeckClick = () => {
 	fetch("https://www.deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1")
 		.then((response) => response.json())
 		.then((data) => {
-			console.log(data);
 			deckID = data.deck_id;
 			disableDrawCardBtn(data);
 		});
@@ -40,7 +39,6 @@ const handleDrawCardClick = () => {
 		.then((data) => {
 			houseCard = data.cards[0].value;
 			playerCard = data.cards[1].value;
-			console.log(data.cards);
 			cardArea.children[0].innerHTML = `
 			<img src=${data.cards[0].image} class="card" />
 		`;
