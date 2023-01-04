@@ -283,3 +283,31 @@ button:disabled {
 		background-color: #930014;
 	}
 }
+
+@media screen and (max-height: 900px){
+	button {
+		font-size: 1em;
+	}
+
+	#cards-remaining {
+		font-size: 1em;
+	}
+
+	#game-message{
+		font-size: 2.5em;
+		margin: 0;
+	}
+
+	.score-title{
+		font-size: 1.5em;
+	}
+
+	.outline-text {
+		font-size: 1.5em;
+	}
+
+	.card-outline{
+		height: 220px;
+		width: calc(220px * 5/7);
+	}
+}
