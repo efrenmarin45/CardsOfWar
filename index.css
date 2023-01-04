@@ -284,7 +284,7 @@ button:disabled {
 	}
 }
 
-@media screen and (max-height: 900px){
+@media screen and (max-height: 900px) {
 	button {
 		font-size: 1em;
 	}
@@ -293,12 +293,12 @@ button:disabled {
 		font-size: 1em;
 	}
 
-	#game-message{
+	#game-message {
 		font-size: 2.5em;
 		margin: 0;
 	}
 
-	.score-title{
+	.score-title {
 		font-size: 1.5em;
 	}
 
@@ -306,8 +306,16 @@ button:disabled {
 		font-size: 1.5em;
 	}
 
-	.card-outline{
+	.card-outline {
 		height: 220px;
-		width: calc(220px * 5/7);
+		width: calc(220px * 5 / 7);
+	}
+
+	.modal-content {
+		height: 55vh;
+	}
+
+	.modal-content > h3 {
+		font-size: 1em;
 	}
 }
